@@ -57,3 +57,7 @@ Take special caution when:
 	- policy for the root node, which componentns are alolowed in template editor
 	- breakpoints for responsive grid and mobile emulator
 Never enter any information that needs to be internationalized into a template.
+
+CF
+
+Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and use page-independent content which can be used in multiple locations/over multiple channels.
