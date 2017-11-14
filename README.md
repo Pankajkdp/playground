@@ -72,3 +72,31 @@ Constituent Parts of a Content Fragment
 - Associated Content
 - Fragment Template
 - Fragment component
+
+Saving Fragment Changes
+Save also updates any references and ensures that the dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+
+Please bear this in mind when using Save and then quickly re-entering the fragment editor to make and save further changes.
+
+While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you Cancel your changes:
+
+When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an editing session exists:
+- If the token is found, the fragment is considered to be part of the existing editing session.
+- If the token is not available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+- While there is an active editing session, the content being edited is automatically saved every 600 seconds (default).
+Default value, see:
+/libs/settings/dam/cfm/jcr:content/autoSaveInterval
+- If the user selects to Cancel the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
+- If the user selects to Save the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+
+Can add Assets to content fragments
+If, after adding an asset, you change format to:
+Plain Text: the asset will be completely lost from the fragment.
+Markdown: the asset will not be visible, but will still be there when you return to Rich Text.
+
+Markdown format allows to create content quickly using markdown syntax
+
+Variations Mode:
+- Create/update/delete/rename a variation
+- Synchronize
+- Summarize
