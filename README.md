@@ -61,3 +61,14 @@ Never enter any information that needs to be internationalized into a template.
 CF
 
 Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and use page-independent content which can be used in multiple locations/over multiple channels.
+
+Constituent Parts of a Content Fragment
+- Fragment Elements
+- Fragment Metadata
+- Master
+- Variations
+- Fragment Paragraph
+- Inserted Asset
+- Associated Content
+- Fragment Template
+- Fragment component
