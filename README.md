@@ -100,3 +100,7 @@ Variations Mode:
 - Create/update/delete/rename a variation
 - Synchronize
 - Summarize
+
+CF on a page
+use CF component to add a CF on a page, following configuration can be made in component dialog
+ - choose element, variation and paragraphs
