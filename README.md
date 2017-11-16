@@ -104,3 +104,22 @@ Variations Mode:
 CF on a page
 use CF component to add a CF on a page, following configuration can be made in component dialog
  - choose element, variation and paragraphs
+Once you add fragment on page a placeholder area is added to top. bottom and between each paragraph of the fragment.
+
+After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (i.e. in the content fragment editor) could lead to erroneous/unexpected results.
+
+When this occurs the in-between content is kept as is: 
+
+In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
+This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to. 
+Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
+
+The out-of-the-box templates are held under:
+
+/libs/settings/dam/cfm/templates
+You can create your site-specific templates for content fragments under:
+
+/apps/settings/dam/cfm/templates
+The location for overlaying out-of-the-box templates or providing customer-specific, application-wide templates that are not intended to be extended/changed at runtime.
+/conf/global/settings/dam/cfm/templates
+The location for instance-wide customer-specific templates that need to be changed at runtime.
